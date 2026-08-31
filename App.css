@@ -1,0 +1,40 @@
+.route-form {
+  width: 80%;
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.route-form h2 {
+  color: #1e3a5f;
+  margin-bottom: 25px;
+}
+
+.route-form input,
+.route-form select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: white;
+  color: #333;
+}
+
+.route-form .analyze-btn {
+  margin-top: 15px;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #e8f4ff;
+  border-radius: 10px;
+  color: #1e3a5f;
+}
