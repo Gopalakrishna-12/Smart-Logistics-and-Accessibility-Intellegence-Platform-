@@ -1,0 +1,1023 @@
+/* =========================================
+   MAIN APP
+========================================= */
+
+.app {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      135deg,
+      #eef6ff 0%,
+      #f8fbff 50%,
+      #edf7f1 100%
+    );
+  color: #172033;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+
+  background: linear-gradient(
+    135deg,
+    #0b1f3a,
+    #123f6d
+  );
+
+  color: white;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.logo-icon {
+  font-size: 38px;
+}
+
+
+.logo h1 {
+  margin: 0;
+
+  font-size: 32px;
+
+  color: white;
+
+  letter-spacing: 1px;
+}
+
+
+.logo p {
+  margin-top: 4px;
+
+  font-size: 14px;
+
+  opacity: 0.8;
+}
+
+
+.header-badge {
+
+  background: rgba(255, 255, 255, 0.15);
+
+  padding: 10px 16px;
+
+  border-radius: 25px;
+
+  font-size: 14px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main {
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+
+  text-align: center;
+
+  padding: 80px 20px 60px;
+
+}
+
+
+.hero-badge {
+
+  display: inline-block;
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+
+}
+
+
+.hero-section h2 {
+
+  font-size: 48px;
+
+  margin-bottom: 18px;
+
+  color: #172033;
+
+}
+
+
+.hero-section h2 span {
+
+  color: #2563eb;
+
+}
+
+
+.hero-section p {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #64748b;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.analyze-btn {
+
+  border: none;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+
+  box-shadow:
+    0 8px 20px
+    rgba(37, 99, 235, 0.25);
+
+}
+
+
+.analyze-btn:hover {
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 12px 25px
+    rgba(37, 99, 235, 0.35);
+
+}
+
+
+.analyze-btn:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+}
+
+
+.hero-btn {
+
+  margin-top: 30px;
+
+  font-size: 17px;
+
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.stats {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+
+  margin-bottom: 50px;
+
+}
+
+
+.stat-card {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  background: white;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s;
+
+}
+
+
+.stat-card:hover {
+
+  transform:
+    translateY(-5px);
+
+}
+
+
+.stat-card > span {
+
+  font-size: 30px;
+
+}
+
+
+.stat-card h3 {
+
+  margin: 0 0 5px;
+
+  color: #172033;
+
+}
+
+
+.stat-card p {
+
+  font-size: 13px;
+
+  color: #64748b;
+
+}
+
+
+/* =========================================
+   ROUTE FORM
+========================================= */
+
+.route-form {
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px
+    rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 60px;
+
+}
+
+
+.section-heading {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+
+}
+
+
+.section-icon {
+
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #e0ecff;
+
+  border-radius: 14px;
+
+  font-size: 25px;
+
+}
+
+
+.section-heading h2 {
+
+  margin: 0;
+
+  color: #172033;
+
+}
+
+
+.section-heading p {
+
+  color: #64748b;
+
+  margin-top: 5px;
+
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.input-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 20px;
+
+}
+
+
+.input-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+  text-align: left;
+
+}
+
+
+.input-group label {
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: #334155;
+
+}
+
+
+.input-group input {
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  border: 1px solid #d1d5db;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+}
+
+
+.input-group input:focus {
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(37, 99, 235, 0.1);
+
+}
+
+
+.main-analyze-btn {
+
+  width: 100%;
+
+  margin-top: 25px;
+
+}
+
+
+/* =========================================
+   ANALYSIS CARDS
+========================================= */
+
+.analysis-card {
+
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background: #f8fafc;
+
+  border-radius: 18px;
+
+  border: 1px solid #e2e8f0;
+
+}
+
+
+.card-title {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+.card-title h2 {
+
+  color: #172033;
+
+}
+
+
+.live-badge {
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+}
+
+
+/* =========================================
+   WEATHER
+========================================= */
+
+.weather-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 20px;
+
+  margin-top: 20px;
+
+}
+
+
+.weather-box {
+
+  padding: 20px;
+
+  background: white;
+
+  border-radius: 14px;
+
+  border-left:
+    5px solid #2563eb;
+
+}
+
+
+.weather-box h3 {
+
+  margin-top: 0;
+
+  color: #1e293b;
+
+}
+
+
+.weather-details {
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  color: #475569;
+
+}
+
+
+/* =========================================
+   RISK SCORE
+========================================= */
+
+.risk-card {
+
+  text-align: left;
+
+}
+
+
+.analysis-text {
+
+  color: #475569;
+
+  line-height: 1.6;
+
+}
+
+
+.risk-score {
+
+  margin-top: 20px;
+
+}
+
+
+.risk-score div:first-child {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+
+}
+
+
+.risk-label {
+
+  color: #64748b;
+
+}
+
+
+.risk-score strong {
+
+  font-size: 22px;
+
+}
+
+
+.risk-bar {
+
+  height: 12px;
+
+  background: #e2e8f0;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+}
+
+
+.risk-progress {
+
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #22c55e,
+      #f59e0b,
+      #ef4444
+    );
+
+  border-radius: 20px;
+
+}
+
+
+.low-risk {
+
+  border-left:
+    6px solid #22c55e;
+
+}
+
+
+.medium-risk {
+
+  border-left:
+    6px solid #f59e0b;
+
+}
+
+
+.high-risk {
+
+  border-left:
+    6px solid #ef4444;
+
+}
+
+
+/* =========================================
+   ROUTES
+========================================= */
+
+.routes-grid {
+
+  display: grid;
+
+  gap: 15px;
+
+  margin-top: 20px;
+
+}
+
+
+.route-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  border: 1px solid #e2e8f0;
+
+  transition: 0.3s;
+
+}
+
+
+.route-item:hover {
+
+  transform:
+    translateX(5px);
+
+  border-color: #2563eb;
+
+}
+
+
+.route-number {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  font-weight: bold;
+
+}
+
+
+.route-info h3 {
+
+  margin: 0 0 8px;
+
+}
+
+
+.route-data {
+
+  display: flex;
+
+  gap: 20px;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.map-section {
+
+  margin-top: 35px;
+
+  padding: 25px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.08);
+
+}
+
+
+.map-heading h2 {
+
+  margin-bottom: 5px;
+
+}
+
+
+.map-heading p {
+
+  color: #64748b;
+
+}
+
+
+.route-legend {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+
+  margin: 20px 0;
+
+  font-size: 14px;
+
+}
+
+
+.route-map {
+
+  height: 550px;
+
+  width: 100%;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+
+  padding: 40px 0 70px;
+
+  text-align: center;
+
+}
+
+
+.features > h2 {
+
+  font-size: 32px;
+
+  margin-bottom: 35px;
+
+}
+
+
+.features-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+
+}
+
+
+.feature-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s;
+
+}
+
+
+.feature-card:hover {
+
+  transform:
+    translateY(-8px);
+
+}
+
+
+.feature-icon {
+
+  font-size: 38px;
+
+  margin-bottom: 15px;
+
+}
+
+
+.feature-card h3 {
+
+  color: #172033;
+
+}
+
+
+.feature-card p {
+
+  color: #64748b;
+
+  line-height: 1.6;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: #0b1f3a;
+
+  color: white;
+
+}
+
+
+.footer h3 {
+
+  margin: 0 0 8px;
+
+}
+
+
+.footer p {
+
+  opacity: 0.7;
+
+  font-size: 14px;
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .header {
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: center;
+
+  }
+
+
+  .logo {
+
+    flex-direction: column;
+
+  }
+
+
+  .hero-section {
+
+    padding-top: 50px;
+
+  }
+
+
+  .hero-section h2 {
+
+    font-size: 34px;
+
+  }
+
+
+  .stats {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .input-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .weather-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .features-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .route-form {
+
+    padding: 20px;
+
+  }
+
+
+  .route-map {
+
+    height: 400px;
+
+  }
+
+}
